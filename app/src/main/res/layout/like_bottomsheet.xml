@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/like_layout"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/red"
+    android:padding="8dp"
+    android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="28dp"
+        android:text="Love the App?"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        app:fontFamily="@font/actor"
+        app:layout_constraintBottom_toTopOf="@id/star"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/star"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/ic_baseline_star_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Rate"
+        android:textStyle="bold"
+        android:fontFamily="@font/actor"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:layout_marginStart="4dp"
+        app:layout_constraintStart_toEndOf="@id/star"
+        app:layout_constraintBottom_toBottomOf="@id/star"
+        app:layout_constraintTop_toTopOf="@id/star"
+        />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/shareIv"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="4dp"
+        android:src="@drawable/ic_baseline_share_24"
+        app:layout_constraintEnd_toStartOf="@id/share"
+        app:layout_constraintTop_toTopOf="@id/share"
+        app:layout_constraintBottom_toBottomOf="@id/share"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/share"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Share"
+        android:fontFamily="@font/actor"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/info_layout"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/blue1"
+    android:padding="8dp"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="28dp"
+        android:text="About the App."
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        app:fontFamily="@font/actor"
+         />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        android:text="VERSION"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:fontFamily="@font/actor"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginBottom="22dp"
+        android:text="AD_3.6_BETA"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        android:text="DISCLAIMER"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:fontFamily="@font/actor"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginBottom="16dp"
+        android:text="This app is not tested \n so it doesn't \n and provided \n  \n English please) :)"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:fontFamily="@font/actor"
+        />
+
+
+   </LinearLayout>

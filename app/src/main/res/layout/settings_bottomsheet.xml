@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/settings_layout"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/black"
+    android:padding="8dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_marginEnd="8dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginBottom="16dp"
+        android:text="COLOR CONFIGURATION"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        app:fontFamily="@font/actor"
+        />
+
+        <RelativeLayout
+            android:layout_marginVertical="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="8dp"
+            android:layout_marginBottom="16dp"
+            android:text="Camera Access Dot"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:fontFamily="@font/actor"
+            />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/click1"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                app:cardCornerRadius="100dp"
+                android:clickable="true"
+                android:onClick="cardColor"
+                app:cardBackgroundColor="@color/green"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                />
+
+        </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginVertical="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       >
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="8dp"
+            android:layout_marginBottom="16dp"
+            android:text="Microphone Access Dot"
+            android:textColor="@color/white"
+            android:layout_centerVertical="true"
+            android:textSize="18sp"
+            app:fontFamily="@font/actor"
+            />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/click2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:onClick="cardColor2"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            app:cardBackgroundColor="@color/orange"
+            app:cardCornerRadius="100dp" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginVertical="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="8dp"
+            android:layout_marginBottom="16dp"
+            android:text="GPS Location Access Dot"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:fontFamily="@font/actor"
+            />
+
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            />
+
+    </RelativeLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="8dp"
+            android:layout_marginBottom="16dp"
+            android:text="Location"
+            android:layout_marginVertical="16dp"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            app:fontFamily="@font/actor"
+            />
+
+
+      <com.google.android.material.chip.ChipGroup
+          android:id="@+id/chip_group"
+          android:layout_width="match_parent"
+          app:singleSelection="true"
+          android:layout_height="wrap_content">
+
+          <com.google.android.material.chip.Chip
+              android:checked="true"
+              app:chipBackgroundColor="@color/white"
+              android:textColor="@color/black"
+              style="@style/Widget.MaterialComponents.Chip.Filter"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Left camera"/>
+
+          <com.google.android.material.chip.Chip
+              android:clickable="true"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              style="@style/Widget.MaterialComponents.Chip.Filter"
+              app:chipBackgroundColor="@color/white"
+              android:textColor="@color/black"
+              android:text="Right camera"/>
+
+
+          <com.google.android.material.chip.Chip
+              android:layout_width="wrap_content"
+              style="@style/Widget.MaterialComponents.Chip.Filter"
+              android:layout_height="wrap_content"
+              app:chipBackgroundColor="@color/white"
+              android:textColor="@color/black"
+              android:text="Top Left"/>
+
+
+          <com.google.android.material.chip.Chip
+              android:layout_width="wrap_content"
+              style="@style/Widget.MaterialComponents.Chip.Filter"
+              android:layout_height="wrap_content"
+              app:chipBackgroundColor="@color/white"
+              android:textColor="@color/black"
+              android:text="Top Right"/>
+
+
+          <com.google.android.material.chip.Chip
+              style="@style/Widget.MaterialComponents.Chip.Filter"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              app:chipBackgroundColor="@color/white"
+              android:textColor="@color/black"
+              android:text="Bottom Left"/>
+
+
+          <com.google.android.material.chip.Chip
+              style="@style/Widget.MaterialComponents.Chip.Filter"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              app:chipBackgroundColor="@color/white"
+              android:textColor="@color/black"
+              android:text="Bottom right"/>
+
+      </com.google.android.material.chip.ChipGroup>
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="8dp"
+            android:layout_marginBottom="16dp"
+            android:text="Size"
+            android:layout_marginVertical="16dp"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            app:fontFamily="@font/actor"
+            />
+
+
+        <androidx.appcompat.widget.AppCompatSeekBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+
+    </LinearLayout>
+
+
+
+</androidx.core.widget.NestedScrollView>
